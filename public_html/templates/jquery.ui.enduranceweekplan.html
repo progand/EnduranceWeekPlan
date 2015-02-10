@@ -1,11 +1,16 @@
-<div>
-    <p><label>Всього часу на тиждень:</label> <input type="number" min="0" max="100000" value="60"/></p>
+<style>
+    .jquery-ui-enduranceweekplan input{
+        width: auto;
+    }
+</style>
+<div class="jquery-ui-enduranceweekplan">
+    <p><label>Всього часу на тиждень: <input type="number" min="0" max="100000" value="60"/></label></p>
     <table border="1">
         <thead>
             <tr>
                 <th>День тижня</th>
                 <th>Пропорційна частка тривалості навантаження (від тижня)</th>                
-                <th>Мінімальний об’єм</th>
+                <th>Мінімальний об’єм в цей день</th>
                 <th>Результуюча к-сть часу</th>
             </tr>
         </thead>
