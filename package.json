@@ -1,0 +1,21 @@
+{
+    "name": "EnduranceWeekPlan",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "build": "browserify public_html/js/app.js -o public_html/js/jquery.ui.enduranceweekplan.js --debug",
+        "watch": "watchify -t html2js-browserify public_html/js/app.js -o public_html/js/jquery.ui.enduranceweekplan.js --debug -v",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browserify": "*",
+        "watchify": "*",
+        "html2js-browserify": "*"
+    }
+}
